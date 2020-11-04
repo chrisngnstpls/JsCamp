@@ -5,20 +5,20 @@ var wg;
 
 
 function bmi(height, weight){
-	var myBmi = weight / (height*height);\
+	var myBmi = weight / (height*height);
     
-    document.write('Your BMI is ' + myBmi + '. ');
-    document.write('</br>');
-    document.write('You are ' );
+    console.log('Your BMI is ' + myBmi + '. ');
+    console.log('</br>');
+    console.log('You are ' );
     if (myBmi<18.5){
-    	document.write('Underweight');
+    	console.log('Underweight');
     } else if (18.5<myBmi<24.9){
-    	document.write('Normal Weight');
+    	console.log('Normal Weight');
     } else if (25<myBmi<29.9) { 
-    	document.write('Overweight');
+    	console.log('Overweight');
     } else if (myBmi>30){
-    	document.write('Obese');
-    } else document.write('something went wrong...');
+    	console.log('Obese');
+    } else console.log('something went wrong...');
     
     
 }

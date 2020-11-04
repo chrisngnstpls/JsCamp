@@ -8,8 +8,7 @@ function bmi(height, weight){
 	var myBmi = weight / (height*height);
     
     console.log('Your BMI is ' + myBmi + '. ');
-    console.log('</br>');
-    console.log('You are ' );
+    console.log('You are : ' );
     if (myBmi<18.5){
     	console.log('Underweight');
     } else if (18.5<myBmi<24.9){

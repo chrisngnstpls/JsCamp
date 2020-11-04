@@ -1,3 +1,7 @@
-document.write('My name is Christos')
-console.log('Hello from console')
-alert('Hello alert')
+var name = 'Christos'
+var age = '38';
+var greet = 'hello this is ' + name + ' and my age is ' + age;
+
+document.write(greet);
+console.log(greet);
+alert(greet);

@@ -54,5 +54,5 @@ function fruitType(fruit){
     return msg;
 }
     
-showPrice = fruitType('bananaS')
+showPrice = fruitType('BaNaNaS')
 console.log(showPrice)

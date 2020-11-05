@@ -43,12 +43,16 @@ function fruitType(fruit){
             price = 3.99;
             break;
         default:
-            console.log('please enter valid fruit')
+            msg='Please enter valid fruit'
             break;
     }
-    msg='The price of '+fruitName+' is $'+price+'.';
+    if (price>0){
+        msg='The price of '+fruitName+' is $'+price+'.';
+    } else {
+        
+    }
     return msg;
 }
     
-showPrice = fruitType('BanaNas')
+showPrice = fruitType('bananaS')
 console.log(showPrice)

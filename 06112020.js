@@ -115,3 +115,15 @@ function exerciseDate (){
 }
 
 exerciseDate()
+
+
+function exerciseDate2() {
+    let months=['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    date = new Date();
+    currentMonth = date.getMonth();
+    monthName = months[currentMonth];
+    console.log(monthName);
+
+}
+
+exerciseDate2()

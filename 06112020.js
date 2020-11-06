@@ -9,11 +9,11 @@ function decide(width, height){
     let msg;
     
     if (width==height){
-            msg="It is a square"
+            msg="It is a square";
     } else {
-        msg=(width>height)?"It is landscape":"It is portrait"
+        msg=(width>height)?"It is landscape":"It is portrait";
     }
-    return msg
+    return msg;
 }
 
 

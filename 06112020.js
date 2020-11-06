@@ -62,68 +62,69 @@ console.log(x);
 // console.log(typeof e[4]);
 
 
-function exerciseDate (){
-    date = new Date();
-    month = date.getMonth();
-    let currentMonth;
-    switch(month){
-        case 0:
-            currentMonth = "January";
-            break;
-        case 1:
-            currentMonth = "February";
-            break;
-        case 2:
-            currentMonth = "March";
-            break;
-        case 3:
-            currentMonth = "April";
-            break;
-        case 4:
-            currentMonth = "May";
-            break;
-        case 5:
-            currentMonth = "June";
-            break;
-        case 6:
-            currentMonth = "July";
-            break;
-        case 7:
-            currentMonth = "August";
-            break;
-        case 8:
-            currentMonth = "September";
-            break;
-        case 9:
-            currentMonth = "October";
-            break;
-        case 10:
-            currentMonth = "November";
-            break;
-        case 11:
-            currentMonth = "December";
-            break;             break;
-        default:
-            console.log('Something went wrong');
-            break;    
+// function exerciseDate (){
+//     date = new Date();
+//     month = date.getMonth();
+//     let currentMonth;
+//     switch(month){
+//         case 0:
+//             currentMonth = "January";
+//             break;
+//         case 1:
+//             currentMonth = "February";
+//             break;
+//         case 2:
+//             currentMonth = "March";
+//             break;
+//         case 3:
+//             currentMonth = "April";
+//             break;
+//         case 4:
+//             currentMonth = "May";
+//             break;
+//         case 5:
+//             currentMonth = "June";
+//             break;
+//         case 6:
+//             currentMonth = "July";
+//             break;
+//         case 7:
+//             currentMonth = "August";
+//             break;
+//         case 8:
+//             currentMonth = "September";
+//             break;
+//         case 9:
+//             currentMonth = "October";
+//             break;
+//         case 10:
+//             currentMonth = "November";
+//             break;
+//         case 11:
+//             currentMonth = "December";
+//             break;             break;
+//         default:
+//             console.log('Something went wrong');
+//             break;    
 
-    }
-
-
-
-    console.log(currentMonth);
-}
-
-exerciseDate()
+//     }
+//     console.log(currentMonth);
+// }
+// exerciseDate()
 
 
-function exerciseDate2() {
-    let months=['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    date = new Date();
-    currentMonth = date.getMonth();
-    monthName = months[currentMonth];
-    console.log(monthName);
+// function exerciseDate2() {
+//     let months=['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+//     date = new Date();
+//     currentMonth = date.getMonth();
+//     monthName = months[currentMonth];
+//     console.log(monthName);
 
-}
+// }
+// exerciseDate2()
 
-exerciseDate2()
+let isZero;
+let n=5;
+isZero=(n!==0)?false:true;
+
+console.log(isZero)

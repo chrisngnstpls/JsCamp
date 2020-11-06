@@ -123,8 +123,17 @@ console.log(x);
 // }
 // exerciseDate2()
 
-let isZero;
-let n=5;
-isZero=(n!==0)?false:true;
+// let isZero;
+// let n=5;
+// isZero=(n!==0)?false:true;
 
-console.log(isZero)
+// console.log(isZero);
+
+let counter = 0;
+let i=0;
+
+do{
+    counter = counter+2
+    i++
+    console.log(counter)
+} while (i<5);

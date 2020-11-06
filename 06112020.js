@@ -3,11 +3,16 @@
 // console.log(k);
 
 var x = 1280;
-var y = 1024;
+var y = 1280;
 
 function decide(width, height){
     let msg;
-    msg=(width>height)?"It is landscape":"It is portrait"
+    
+    if (width==height){
+            msg="It is a square"
+    } else {
+        msg=(width>height)?"It is landscape":"It is portrait"
+    }
     return msg
 }
 

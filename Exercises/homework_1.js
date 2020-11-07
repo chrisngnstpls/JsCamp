@@ -24,7 +24,7 @@ function exercise2(string1, string2){
 exercise2(str1, str2)
 */
 
-/*
+/* Exercise 3
 //Write a function that takes two numbers and returns the maximum of the two. Use only conditionals.
 function exercise3(num1, num2) {
     
@@ -38,8 +38,9 @@ function exercise3(num1, num2) {
 exercise3(120,5000);
 */
 
-/*
-//Write a script to check whether a string starts with 'Java' and false otherwise. 
+/* Exercise 4
+//Write a script to check whether a string starts with 'Java' and false otherwise.
+//This script will search if any given string starts with any given string and log the result to the console. 
 
 function exercise4(inputString, searchString) { 
     searchLen = searchString.length;

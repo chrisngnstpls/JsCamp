@@ -5,7 +5,7 @@
 */
 
 
-
+// *** Ternaries ***
 // var x=8;
 // k=(x==5)?"It is five":"It is not five";
 // console.log(k);
@@ -37,8 +37,8 @@ let c = 'something';
 
 x = (a??b??c);
 console.log(x);
-
 */
+
 
 // const arr = [1,2,3,4,5,6,7]
 // while (arr.length>0) {
@@ -61,7 +61,7 @@ console.log(x);
 // console.log(e.length);
 // console.log(typeof e[4]);
 
-
+// Fetch month name from the Date() object.
 // function exerciseDate (){
 //     date = new Date();
 //     month = date.getMonth();
@@ -129,11 +129,11 @@ console.log(x);
 
 // console.log(isZero);
 
-let counter = 0;
-let i=0;
+// let counter = 0;
+// let i=0;
 
-do{
-    counter = counter+2
-    i++
-    console.log(counter)
-} while (i<5);
+// do{
+//     counter = counter+2
+//     i++
+//     console.log(counter)
+// } while (i<5);

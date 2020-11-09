@@ -92,7 +92,7 @@ class GreekPoet {
         this.dod = dod;
 
         this.smallBio = function(){
-            return 'Poet ${this.firstName} ${this.lastName} was born in ${this.dob} and died in ${this.dod}';
+            return `Poet ${this.firstName} ${this.lastName} was born in ${this.dob} and died in ${this.dod}`;
         }
     }
 }
@@ -101,6 +101,7 @@ const poet = new GreekPoet('kiki', 'dimoula', 1901, 1996)
 console.log(poet.smallBio());
 */
 
+/*
 class Car {
     constructor(brand,model,color, engine, mileage){
         this.brand = brand;
@@ -110,11 +111,11 @@ class Car {
         this.mileage = mileage;
 
         this.dueService = function() {
-            let serviceMiles = 10000
+            let serviceMiles = 10000;
             if (mileage > serviceMiles) {
-                return 'Car ' + this.brand + 'model ' + this.model + ' of color '+ this.color + ' needs service.'
+                return `Car ${this.brand} model ${this.model} of color ${this.color} needs service.`
             } else {
-                return 'Car ' + this.brand + 'model ' + this.model + ' of color '+ this.color + ' does not need service.'
+                return `Car ${this.brand} model ${this.model} of color ${this.color} does not need service.`
             }
             
         }
@@ -122,4 +123,40 @@ class Car {
 }
 
 const myCar = new Car('Honda', 'Accura', 'red', {size:3, cylinder:4}, 5000);
-console.log(myCar.dueService());
+//console.log(myCar.dueService());
+
+console.log(Object.getOwnPropertyNames(myCar));
+console.log(Object.keys(myCar));
+*/
+
+class BankAccount {
+    constructor(firstName, lastName, iban, balance, isFlagged) { 
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.iban = iban;
+        this.balance = balance;
+        this.isFlagged = isFlagged
+
+        this.deposit = function(amountDeposit){
+            if (!isFlagged){
+                this.balance = balance + amountDeposit;
+                return `Deposited ${amountDeposit} to ${iban}, owner : ${firstName} ${lastName}. Total now is ${this.balance}`
+            } else { 
+                return `Something went wrong with deposit`
+            }
+        }
+        this.withdraw = function(amountWithdraw){
+            if ((!isFlagged) && (balance>amountWithdraw)){
+                this.balance = balance - amountWithdraw;
+                return `Withdrew ${amountWithdraw} from ${iban}, owner : ${firstName} ${lastName}. Total now is ${this.balance}`
+
+            } else {
+                return `something went wrong with withdrawal`
+            }
+        }
+    }
+}
+
+const customer = new BankAccount('Chris', 'Anagnostopoulos', '1231398912', 100, false);
+
+console.log(customer.withdraw(50))

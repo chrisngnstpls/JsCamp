@@ -102,6 +102,8 @@ console.log(poet.smallBio());
 */
 
 /*
+//Class constructor example
+
 class Car {
     constructor(brand,model,color, engine, mileage){
         this.brand = brand;
@@ -129,6 +131,8 @@ console.log(Object.getOwnPropertyNames(myCar));
 console.log(Object.keys(myCar));
 */
 
+// A class constructor for the BankAccount obj. containing two functions for withdrawl / deposit including rudimentary error checking
+/*
 class BankAccount {
     constructor(firstName, lastName, iban, balance, isFlagged) { 
         this.firstName = firstName;
@@ -140,18 +144,17 @@ class BankAccount {
         this.deposit = function(amountDeposit){
             if (!isFlagged){
                 this.balance = balance + amountDeposit;
-                return `Deposited ${amountDeposit} to ${iban}, owner : ${firstName} ${lastName}. Total now is ${this.balance}`
+                return `Deposited ${amountDeposit} to ${iban}, owner : ${firstName} ${lastName}. Total now is ${this.balance}.`
             } else { 
-                return `Something went wrong with deposit`
+                return `Something went wrong with the deposit for ${firstName} ${lastName}.`
             }
         }
         this.withdraw = function(amountWithdraw){
             if ((!isFlagged) && (balance>amountWithdraw)){
                 this.balance = balance - amountWithdraw;
                 return `Withdrew ${amountWithdraw} from ${iban}, owner : ${firstName} ${lastName}. Total now is ${this.balance}`
-
             } else {
-                return `something went wrong with withdrawal`
+                return `Something went wrong with the withdrawal for ${firstName} ${lastName}.`
             }
         }
     }
@@ -159,4 +162,13 @@ class BankAccount {
 
 const customer = new BankAccount('Chris', 'Anagnostopoulos', '1231398912', 100, false);
 
-console.log(customer.withdraw(50))
+console.log(customer.withdraw(50));
+console.log(customer.withdraw(150));
+console.log(customer.deposit(150));
+*/
+
+
+
+
+
+

@@ -68,7 +68,6 @@ function Poet(firstName, lastName, numberOfBooks){
 const x = new Poet('Kiki', 'Dimoula', 50)
 console.log(x);
 
-*/
 
 function Car(model, make, brand, engine, color){
     this.brand = brand;
@@ -78,5 +77,49 @@ function Car(model, make, brand, engine, color){
     this.color = color;
 }
 
-const myHonda = new Car('accura', '2019', 'honda', {size:3, cylinders:4}, color='red')
-console.log(myHonda)
+const myHonda = new Car('accura', '2019', 'honda', {size:3, cylinders:4}, color='red');
+console.log(myHonda);
+
+*/
+
+//Classes in Js//
+/*
+class GreekPoet {
+    constructor (firstName, lastName, dob, dod){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.dob = dob;
+        this.dod = dod;
+
+        this.smallBio = function(){
+            return 'Poet ${this.firstName} ${this.lastName} was born in ${this.dob} and died in ${this.dod}';
+        }
+    }
+}
+
+const poet = new GreekPoet('kiki', 'dimoula', 1901, 1996)
+console.log(poet.smallBio());
+*/
+
+class Car {
+    constructor(brand,model,color, engine, mileage){
+        this.brand = brand;
+        this.model = model;
+        this.color = color;
+        this.engine = engine;
+        this.mileage = mileage;
+
+        this.dueService = function() {
+            let serviceMiles = 10000
+            if (mileage > serviceMiles) {
+                return 'Car ' + this.brand + 'model ' + this.model + ' of color '+ this.color + ' needs service.'
+            } else {
+                return 'Car ' + this.brand + 'model ' + this.model + ' of color '+ this.color + ' does not need service.'
+            }
+            
+        }
+    }
+}
+
+const myCar = new Car('Honda', 'Accura', 'red', {size:3, cylinder:4}, 5000);
+console.log(myCar.dueService());

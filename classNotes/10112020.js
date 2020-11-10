@@ -96,6 +96,8 @@ console.log(set);
 */
 
 // Exercise 1 
+
+/*
 myDate1 = new Date("2020 10 23");
 myDate2 = new Date("2019 4 11");
 
@@ -111,6 +113,19 @@ function timeDelta(date1, date2) {
 }
 
 console.log(timeDelta(myDate1, myDate2));
+*/
 
+myArray = [1,2,1,3,1,5,7,3254,1,4356,1,10,453,145,52];
 
+function exerciseToSet(someArray) {
+    let i=0;
+    let mySet = new Set()
+    while (i<someArray.length){
+        mySet.add(someArray[i]);
+        i++
+    }
+    return mySet;
+}
 
+x = exerciseToSet(myArray);
+console.log(x);

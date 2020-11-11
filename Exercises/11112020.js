@@ -205,7 +205,8 @@ function secondCallback(var1, var2){
 thisIsJs(`*Literal string*`, thisIsCallback);
 thisIsJs(`*Literal string`, secondCallback);
 */
-
+// another callback example
+/*
 var calculateTotal = function (price, quantity, tax){
     var subtotal = price*quantity;
     return subtotal + tax(subtotal);
@@ -219,4 +220,85 @@ var calcTax = function(subtotal){
 
 var calc = calculateTotal(50,2,calcTax);
 console.log(calc);
+*/
+
+/*
+function sayHi(){
+    console.log('hello THIS');
+
+}
+
+sayHi();
+*/
+
+// default use of .this property
+/*
+function sayHey(){
+    console.log(this.ax);
+}
+
+ax = "I must understand yes I must." // <---- in VSC this will return undefined when declared with var/let/const (global or local).
+sayHey();
+*/
+
+/*
+// Implicit use of .this
+function showAge() {
+    console.log(this.age);
+}
+
+const person = {
+    age:45,
+    showPersonAge : showAge // <---------- this will get this.age from the local person object "age" variable.
+};
+
+let age = 20;
+person.showPersonAge();
+*/
+
+
+// Explicit use of this. (call, bind etc)
+/*
+function explicitMe() {
+    console.log(this.A);
+};
+
+var obj = {
+    A:"Ramrod is in control now Aprilia"
+};
+
+//explicitMe.call(obj);   //<----------- using the .call() method to pass an object parameter and this. gets the value from the value passed.
+
+const bindThis = explicitMe.bind(obj);  // <---------- this binds the function to the object passed.
+console.log(bindThis())
+
+*/
+
+/*
+// Case function constructor
+
+function ComicHero(age) { 
+    this.age = age;
+}
+
+var mickey = new ComicHero(92);
+var hulk = new ComicHero(58);
+
+// we never came back to this part. No output preview. :(
+
+*/
+// scope examples
+
+var one = 1;
+
+function outer(){
+    var two = 2;
+
+    function inner() {
+        var three = 3;
+        console.log(one,two,three);
+    }
+}
+
+
 

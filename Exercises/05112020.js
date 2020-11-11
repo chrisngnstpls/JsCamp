@@ -1,4 +1,11 @@
 
+/* 
+=== operator in Js
+escape characters `hello\"is this the real life"\world`
+*/
+
+
+
 //x = '7' + '3';
 //console.log(typeof(x));
 

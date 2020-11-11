@@ -132,7 +132,7 @@ console.log(Object.keys(myCar));
 */
 
 // A class constructor for the BankAccount obj. containing two functions for withdrawl / deposit including rudimentary error checking
-/*
+
 class BankAccount {
     constructor(firstName, lastName, iban, balance, isFlagged) { 
         this.firstName = firstName;
@@ -162,10 +162,10 @@ class BankAccount {
 
 const customer = new BankAccount('Chris', 'Anagnostopoulos', '1231398912', 100, false);
 
-console.log(customer.withdraw(50));
-console.log(customer.withdraw(150));
-console.log(customer.deposit(150));
-*/
+//console.log(customer.withdraw(50));
+//console.log(customer.withdraw(150));
+//console.log(customer.deposit(150));
+console.log(typeof(customer));
 
 
 

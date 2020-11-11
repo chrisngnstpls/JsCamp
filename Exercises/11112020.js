@@ -184,8 +184,8 @@ console.log(xe);
 */
 
 /*
-*/
-// Explaining callbacks. care to add ()
+
+// Explaining callbacks. care to add () when calling it.
 
 
 function thisIsJs(string, callback){
@@ -204,4 +204,19 @@ function secondCallback(var1, var2){
 
 thisIsJs(`*Literal string*`, thisIsCallback);
 thisIsJs(`*Literal string`, secondCallback);
+*/
+
+var calculateTotal = function (price, quantity, tax){
+    var subtotal = price*quantity;
+    return subtotal + tax(subtotal);
+};
+
+var calcTax = function(subtotal){
+    var taxRate = 0.05;
+    var tax = subtotal * taxRate;
+    return tax;
+};
+
+var calc = calculateTotal(50,2,calcTax);
+console.log(calc);
 

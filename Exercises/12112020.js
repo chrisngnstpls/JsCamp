@@ -5,14 +5,14 @@ Error handling
 
 */
     function arrayFromRange (min,max){
-        let myArray=[]
+        let myArray=[];
         console.log('starting');
         for (i=min;i<max;i++){
             toPush = i+1;
-            myArray.push(toPush)
+            myArray.push(toPush);
         }
         return myArray
     }
 
-    x = arrayFromRange(5,15)
+    x = arrayFromRange(5,15);
     console.log(x);

@@ -19,8 +19,8 @@ Error handling
     console.log(x);
 
 */
+/*
 // second method of solving
-
 function anotherAttempt (min, max){
     let myArray=[];
     let i=min;
@@ -34,6 +34,54 @@ function anotherAttempt (min, max){
     }
     return myArray;
 }
+let f;
+
 
 f = anotherAttempt(5,10);
 console.log(f);
+*/
+
+/*
+try{
+    thisIsNotAFunction('heh');
+}
+catch(err){
+    console.log('A wild exception appears' + err)
+}
+*/
+
+/*
+function theBrandNewTryCatch(){
+    let message = '';
+    let x = prompt('hello?')
+
+    try {
+        if (x=='') throw ' empty';
+        if (isNaN(x)) throw 'not a number';
+        if (x>100) throw ' a big number'
+        if (x<50) throw 'is a small number';
+
+    }
+    catch(err){
+        console.log('your input ' + err);
+    }
+}
+
+theBrandNewTryCatch();
+*/
+
+
+
+let stringToPass='hello mr bob. nice to meet you';
+
+
+function countVowels(inputString){
+
+    let vowelNum = inputString.match(/[aeiou]/gi).length
+    return vowelNum;
+}
+
+x = countVowels(stringToPass);
+console.log(`${x} vowels in the string : ${stringToPass}`);
+
+

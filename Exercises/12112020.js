@@ -71,12 +71,13 @@ theBrandNewTryCatch();
 */
 
 
-
+//using regexp to count instances of x in a string
+//this is our string to search
 let stringToPass='hello mr bob. nice to meet you';
 
 
 function countVowels(inputString){
-
+    //match will return an array of instances from the search string
     let vowelNum = inputString.match(/[aeiou]/gi).length
     return vowelNum;
 }

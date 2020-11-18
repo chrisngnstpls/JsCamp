@@ -15,7 +15,7 @@ removing event listeners :
 */
 
 //Switch button example. Toggle?
-/*
+
 function changeText(){
     let myButton = document.querySelector('#button');
     let myValue = myButton.value;
@@ -23,7 +23,7 @@ function changeText(){
         myButton.value='Off'
     } else { myButton.value='On'}
 };
-*/
+
 
 function changeColor(){
     
@@ -33,3 +33,58 @@ function changeColor(){
 function changeAgain(){
     document.getElementById('header').style.color='red';
 };
+
+/*
+
+// my Way
+function imageSwap(){
+    let image = document.getElementById('image-swap');
+    console.log(image)
+    let link = image.getAttribute('src');
+    image.setAttribute('src',"https://picsum.photos/200/300");
+}
+*/
+
+//Vasilis's way (adding event listeners to object)
+
+/*
+const img=document.querySelector('#image-swap');
+let originalSrcImage=img.getAttribute('src');
+img.addEventListener('mouseenter', function(){
+    this.setAttribute('src','https://picsum.photos/200/300')
+});
+img.addEventListener('mouseleave',function(){
+    this.setAttribute('src',originalSrcImage)
+});
+*/
+function validateEmail(){ 
+    const dataInput = document.myMailForm.email.value;
+    const atPosition = dataInput.indexOf("@");
+    const dotPosition = dataInput.lastIndexOf(".");
+    if (atPosition<2 || dotPosition < atPosition + 2 || dotPosition + 2 >= dataInput.length){
+        alert ("please enter a valid email address");
+    return false;
+    };
+}
+
+/* 
+-------------------------------------------------------------
+JSON : JavaScript Object Notation
+syntax for storing and exchanging data
+JSON is text written with JS object notation
+
+json keys *MUST* be strings. values can be anything (num, arr, obj)
+
+ex:
+myObj = {"name":"Nik", "age":31, "city":"new york"}
+var myJson = JSON.stringify(myObj)
+
+json string to javascript var :
+
+JSON.parse(json_string)
+
+
+json does not allow single quotes (')
+json does not allow comma at the end {"h",2,}  <----- comma bad
+json does not allow unquoted property keys {h:2}
+

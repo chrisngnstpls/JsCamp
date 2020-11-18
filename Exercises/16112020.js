@@ -58,7 +58,7 @@ function getCookie(cname) {
 }
 */
 
-
+/*
 var sampleString = 'name;surname;dateofbirth;location'
 
 function iterateExample(){
@@ -70,3 +70,45 @@ function iterateExample(){
 }
 
 iterateExample();
+*/
+/*
+let myImage = document.getElementById('image');
+myImage.onclick = function() {
+    let start = Date.now();
+    let timer = setInterval(function(){
+        let a;
+        let timePassed = Date.now() - start;
+        myImage.style.left = timePassed / 5 + 'px';
+        myImage.style.top = timePassed / 5 + 'px';
+        if (timePassed > 2000) clearInterval(timer);
+    },20);
+}
+
+function myMove() {
+    var elem = document.getElementById('animate');
+    var pos =0;
+    var id= setInterval(frame,5);
+    function frame(){
+        if (pos == 350) {
+            clearInterval(id);
+        }else {
+            pos++;
+            elem.style.top = pos +'px';
+            elem.style.left = pos + 'px';
+        };
+    };
+};
+
+
+
+
+function showPage(){
+    document.getElementById('container2').style.display='block';
+    document.getElementById('frame').style.display='none';
+
+}
+setTimeout(showPage, 3000);
+
+*/
+
+

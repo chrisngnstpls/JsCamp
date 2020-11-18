@@ -12,12 +12,10 @@ approaches:
 
 removing event listeners :
     removeEventListener() (will not work with anonymous functions)
-
-
 */
 
 //Switch button example. Toggle?
-
+/*
 function changeText(){
     let myButton = document.querySelector('#button');
     let myValue = myButton.value;
@@ -25,7 +23,7 @@ function changeText(){
         myButton.value='Off'
     } else { myButton.value='On'}
 };
-
+*/
 
 function changeColor(){
     

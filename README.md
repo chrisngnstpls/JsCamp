@@ -1,4 +1,2 @@
 # JsCamp
-First JsCamp repo
-test
-test
+A repository for class exercises, projects and assignments for the JS Bootcamp 2020
